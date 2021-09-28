@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": ["airbnb-typescript/base", "eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": "off",
+    "default-case": "warn",
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-unused-expressions": ["error"],
+    "no-console": "warn",
+    "no-new": "off",
+    "no-nested-ternary": "off",
+    "no-unused-expressions": "off"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint"]
+}

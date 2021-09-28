@@ -5,9 +5,25 @@
   "main": "index.js",
   "author": "Tomas Morato",
   "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev -r dotenv/config ./src/index.ts dotenv_config_path=.env.local",
+    "start": "tsc && node -r dotenv/config dist/src/index.js dotenv_config_path=.env.local",
+    "build": "tsc",
+    "lint": "eslint . --ext ts",
+    "format": "prettier --write ."
+  },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
     "dotenv": "^10.0.0",
-    "eslint": "^7.32.0",
+    "eslint": "7.2.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "^24.4.2",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.3"
