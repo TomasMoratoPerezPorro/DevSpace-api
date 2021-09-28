@@ -1,0 +1,15 @@
+{
+  "name": "DevSpace-api",
+  "version": "1",
+  "description": "Node.js Server to feed a Developers Space Network",
+  "main": "index.js",
+  "author": "Tomas Morato",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.3"
+  }
+}
